@@ -7,7 +7,6 @@
 
 html {
   scroll-behavior: smooth;
-  scroll-padding-top: 100px;
 }
 
 body {
@@ -41,6 +40,22 @@ body {
 
 .navbar a:hover {
   color: #FFD700;
+}
+
+/* === Hamburger Menu === */
+.menu-toggle {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 1.8rem;
+  color: white;
+  cursor: pointer;
+  margin-right: 1rem;
+}
+
+.nav-links {
+  display: flex;
+  gap: 2rem;
 }
 
 /* === Hero Dark Theme === */
@@ -213,10 +228,11 @@ body {
 
 .project-thumb {
   width: 100%;
+  height: 180px;
   border-radius: 8px;
   margin-bottom: 1rem;
-  object-fit: cover;
-  height: 160px;
+  object-fit: cover;              
+  object-position: center bottom;    
   background-color: #000;
 }
 
@@ -283,22 +299,109 @@ body {
 
 /* === Responsive Adjustments === */
 @media (max-width: 768px) {
-  .hero {
+  body {
+    background-color: #0a0a0a;
+  }
+  /* Hero layout becomes vertical */
+  .hero.dark-theme {
     flex-direction: column;
+    padding: 3rem 2rem;
+    text-align: center;
+  }
+
+  .hero-content,
+  .hero-image {
+    width: 100%;
+    flex: 1 1 100%;
+    max-width: 100%;
+  }
+
+  .hero-content {
+    align-items: center;
     text-align: center;
   }
 
   .hero-content h1 {
-    font-size: 2.2rem;
+    font-size: 2rem;
   }
 
-  .hero-image {
+  .hero-content .tagline {
+    font-size: 1rem;
+  }
+
+  .hero-image img {
+    width: 240px;
+    height: 250px;
     margin-top: 2rem;
   }
 
   .navbar {
+    background-color: transparent;
     position: static;
     justify-content: center;
-    margin-bottom: 1rem;
+    margin: 1rem 0;
+    flex-wrap: wrap;
+  }
+
+  .projects-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .section {
+    padding: 4rem 1rem;
+  }
+
+  .project-thumb {
+    height: 140px;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    background-color: rgba(18, 18, 18, 0.95);
+    position: absolute;
+    top: 60px;
+    right: 1rem;
+    padding: 1rem;
+    border-radius: 8px;
+    z-index: 999;
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
+
+  .navbar {
+    justify-content: space-between;
+    padding: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-content h1 {
+    font-size: 1.6rem;
+  }
+
+  .hero-image img {
+    width: 200px;
+    height: 200px;
+    margin-top: 2rem;
+  }
+
+  .tag {
+    font-size: 0.65rem;
+  }
+
+  .link-btn {
+    font-size: 0.75rem;
+    padding: 0.4rem 0.75rem;
+  }
+
+  .project-thumb {
+    height: 120px;
   }
 }
