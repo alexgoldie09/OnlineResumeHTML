@@ -1,96 +1,109 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Resume</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Alex Goldberg | Game Programmer Resume</title>
+
+  <!-- Font Awesome for social icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="styles.css" />
+
+  <!-- Optional Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <h1>Alexander Goldberg Resume</h1>
-    <hr>
-    <h2>Games Programmer</h2>
 
-    <h3>Professional Summary</h3>
-    <p>Innovative and versatile game programmer with a strong foundation in audio engineering and real-world operations. Adept at blending technical expertise with creative problem-solving to develop immersive gameplay systems and streamline team workflows. Proven ability to collaborate across disciplines, from artists and designers to operational staff, delivering high-quality, efficient solutions. Known for adaptability, rapid prototyping skills, and a proactive learning mindset—driving results in both high-pressure environments and creative studios.</p>
+  <!-- === Navbar === -->
+  <nav class="navbar">
+    <a href="#home">Home</a>
+    <a href="#projects">Projects</a>
+    <a href="#resume">Resume</a>
+  </nav>
 
-    <h3>Education</h3>
-    <ul>
-        <li><strong>Bachelor of Arts in Audio Engineering and Sound Production</strong><br>January 2017, JMC Academy, Ultimo, Sydney</li>
-        <li><strong>Bachelor of Software Engineering in Games Programming</strong><br>Graduating in 2026, Torrens University, Ultimo, Sydney</li>
-    </ul>
-
-    <h3>Work Experience</h3>
-    <h4>Resident Support Officer<br><small>March 2024 - Present | CONSTANT, Sydney, New South Wales</small></h4>
-    <ul>
-        <li>Provided on-site support and concierge services to residents, ensuring a welcoming and secure environment.</li>
-        <li>Responded to resident inquiries, maintenance requests, and after-hours emergencies with professionalism and care.</li>
-        <li>Maintained detailed incident and handover reports to ensure consistent communication across shifts.</li>
-        <li>Monitored building access and assisted with security protocols to ensure resident safety and property integrity.</li>
-        <li>Liaised with building management, tradespeople, and emergency services as needed.</li>
-        <li>Supported community engagement through clear communication and a respectful, service-oriented approach.</li>
-    </ul>
-
-    <h4>Lead Game Programmer<br><small>January 2024 - Present | Space Crab Inc., Sydney, New South Wales</small></h4>
-    <ul>
-        <li>Collaborated closely with artists and designers to create new gameplay mechanics.</li>
-        <li>Implemented gameplay features such as AI, physics, animation, sound, and user interface components.</li>
-        <li>Solved complex technical problems by identifying and addressing performance bottlenecks.</li>
-        <li>Utilized scripting languages such as C# or GDScript for rapid prototyping of game features.</li>
-    </ul>
-
-    <h4>Control Room Operator<br><small>July 2023 - February 2024 | MSS, Sydney, New South Wales</small></h4>
-    <ul>
-        <li>Trained subordinate staff members on proper operation of process controls systems.</li>
-        <li>Demonstrated excellent communication skills when dealing with personnel from different departments and shifts.</li>
-        <li>Responded promptly to alarms and took appropriate action as needed.</li>
-        <li>Developed strong working relationships with colleagues across all levels of the organization.</li>
-    </ul>
-
-    <h4>Facilities Assistant and Audio Engineer<br><small>March 2020 - June 2023 | JMC Academy, Sydney, New South Wales</small></h4>
-    <ul>
-        <li>Mastered and edited audio recordings using Pro Tools, and Logic Pro X software.</li>
-        <li>Operated audio consoles to mix and balance multiple sources during live performances.</li>
-        <li>Troubleshot technical issues that arose during tracking and mixing sessions with quick precision.</li>
-        <li>Edited dialogue, music, and sound effect tracks for post-production projects.</li>
-        <li>Trained new employees on proper use of equipment and safety protocols within the workplace environment.</li>
-        <li>Assisted with the coordination and scheduling of facility maintenance, repairs, and inspections.</li>
-    </ul>
-
-    <h4>Audio Visual Technician<br><small>March 2017 - January 2018 | AART House, Sydney, New South Wales</small></h4>
-    <ul>
-        <li>Performed troubleshooting activities to diagnose issues with audio visual equipment.</li>
-        <li>Provided technical support to ensure successful operation of audio visual equipment during live performances.</li>
-        <li>Assisted with the setup and installation of audio visual equipment for events, including speakers, microphones, projectors, and screens.</li>
-    </ul>
-
-    <h3>Technical Skills</h3>
-    <ol>
-        <li>Programming (C#, GDScript, HTML, JavaScript, Python)</li>
-        <li>Game Development (Unity, Godot, UE5)</li>
-        <li>Audio Engineering & Post-Production (Pro Tools, Logic Pro X)</li>
-        <li>Rapid Prototyping & Feature Implementation</li>
-        <li>Technical Problem Solving & Optimisation</li>
-    </ol>
-
-    <h3>Interpersonal Skills</h3>
-    <ol>
-        <li>Customer Support Service</li>
-        <li>Collaborative Teamwork</li>
-        <li>Clear and Professional Communication</li>
-        <li>Adaptability in Creative and Operational Environments</li>
-        <li>Conflict Resolution & Emergency Response</li>
-        <li>Proactive Learning and Task Ownership</li>
-    </ol>
-
-    <img src="./Photos/Profile_Pic.jpg" alt="My Profile Picture" style="width:300px; display:block; margin:auto; border:2px solid #000; height:auto;">
-    <div style="text-align:center; margin-top:20px;">
-        <a href="./Public/contact.html" style="margin-right:30px;">Contact Me</a>
-        <a href="./Public/hobbies.html">Hobbies</a>
+  <header id="home" class="hero dark-theme">
+  <div class="hero-content">
+    <h1>Hello World <span class="wave">👋</span> I'm <span class="highlight">Alex</span>,</h1>
+    <p class="tagline">Aspiring Games Programmer and Unity Dev.</p>
+    <div class="social-links dark-icons">
+      <a href="https://github.com/YOUR_GITHUB" target="_blank"><i class="fab fa-github"></i></a>
+      <a href="https://linkedin.com/in/YOUR_LINKEDIN" style="color:#0072B1" target="_blank"><i class="fab fa-linkedin"></i></a>
     </div>
-    <hr>
-    <footer style="text-align:center; margin-top:40px; font-size:0.9em; color:#555;">
+  </div>
+  <div class="hero-image">
+    <img src="Photos/Profile_Pic.png" alt="Alex Goldberg Portrait" />
+  </div>
+</header>
+
+  <section id="projects" class="section projects-section">
+  <h2>Featured Projects</h2>
+  <p class="section-sub">
+    Here’s a glimpse of what I’ve built using Unity, C#, and custom gameplay systems.
+  </p>
+
+  <div class="projects-grid">
+    <!-- Project 1 – Detective Boy -->
+<div class="project-card">
+  <img src="assets/detectiveboy-thumb.png" alt="Detective Boy Thumbnail" class="project-thumb">
+  <h3>🕵️ Detective Boy Prototype</h3>
+  <p>A short interactive story built for a narrative game jam. Solve clues, follow leads, and uncover what really happened at the dinner party.</p>
+  
+  <div class="tags">
+    <span class="tag">Unity</span>
+    <span class="tag">C#</span>
+    <span class="tag">Narrative</span>
+  </div>
+
+  <div class="project-links">
+    <a href="https://github.com/alexgoldie09/DetectiveBoyPrototype" target="_blank" class="link-btn">
+      <i class="fab fa-github"></i> Source Code
+    </a>
+    <a href="https://thehappydinner.itch.io/detective-boy-the-happy-dinner" target="_blank" class="link-btn">
+      <i class="fas fa-gamepad"></i> Download on Itch.io
+    </a>
+  </div>
+</div>
+
+
+    <!-- Project 2 -->
+    <a href="https://github.com/YOUR_GITHUB/erebus91" class="project-card" target="_blank">
+      <img src="assets/erebus91-thumb.png" alt="Erebus 91 Thumbnail" class="project-thumb">
+      <h3>👻 Erebus 91</h3>
+      <p>3D survival horror game with GOAP AI and immersive stealth mechanics.</p>
+      <div class="tags">
+        <span class="tag">Unity</span>
+        <span class="tag">GOAP</span>
+        <span class="tag">Horror</span>
+      </div>
+    </a>
+
+    <!-- Project 3 -->
+    <a href="https://github.com/YOUR_GITHUB/rabbitmq-simulation" class="project-card" target="_blank">
+      <img src="assets/tracker-thumb.png" alt="RabbitMQ Tracker Thumbnail" class="project-thumb">
+      <h3>🔁 Contact Tracker</h3>
+      <p>Python + RabbitMQ simulation of a dynamic grid-based movement system.</p>
+      <div class="tags">
+        <span class="tag">Python</span>
+        <span class="tag">RabbitMQ</span>
+        <span class="tag">Simulation</span>
+      </div>
+    </a>
+  </div>
+</section>
+
+  <!-- === Resume Section === -->
+  <section id="resume" class="section">
+    <h2>Resume</h2>
+    <p>You can download my full resume <a href="assets/Alex_Goldberg_Resume.pdf" target="_blank">here</a>.</p>
+    <!-- Optional: Embed PDF viewer or summary of experience -->
+  </section>
+
+  <footer style="text-align:center; margin-top:40px; font-size:0.9em; color:#555;">
         <p>&copy; 2025 Alexander Goldberg. All rights reserved.</p>
         <p>This resume is for personal portfolio and professional use only.</p>
     </footer>
+
 </body>
 </html>
